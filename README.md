@@ -1,3 +1,6 @@
+# Profolio
+This is my perosonal profolio, providing the viewer with vital information about me, while also showcasing my best work so far.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
