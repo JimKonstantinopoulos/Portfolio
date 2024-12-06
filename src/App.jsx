@@ -1,25 +1,22 @@
 import "./app.css";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 function App(){
-  const heroText = "My name is Ian Dunkerley, a front-end developer based in Torquay, Devon, UK. I have worked on a wide range of front-end projects, from DJ applications to eCommerce booking platforms, with a focus on creating clean, well-crafted interfaces that not only look great but also provide a seamless user experience.";
+  const heroText = "My name is Dimitris Konstantinopoulos, a front-end developer from Patras, Greece. I specialize in building responsive, user-centric web applications, with a strong emphasis on intuitive design and seamless functionality. Leveraging modern technologies, I'm passionate about delivering innovative solutions that enhance the user experience and meet diverse project needs.";
 
   const heroTextArr = heroText.split(" ");
 
   const [visibleWords, setVisibleWords] = useState([]);
-  const intervalRef = useRef(null);
-
+  
   useEffect(() => {
-    let curIndex = 0;
-    intervalRef.current = setInterval(() => {
-        setVisibleWords((prev) => [...prev, curIndex]);
-        curIndex++;
-        
-        if(curIndex === heroTextArr.length)
-          clearInterval(intervalRef.current);
-      }, 200);
-    
-  }, [heroTextArr]);
+    const timeouts = [];
+    heroTextArr.forEach((_, i) => {
+    timeouts.push(setTimeout(() =>{
+        setVisibleWords(prev => [...prev, i]);
+      }, (i + 10) * 50));
+    })
+    return () => timeouts.forEach(clearTimeout);
+  }, []);
   
   return <div>
     <p>
