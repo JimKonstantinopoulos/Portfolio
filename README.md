@@ -11,6 +11,7 @@ This is my perosonal profolio, providing the viewer with vital information about
 # Libraries and Frameworks
 <ol>
   <li>React.Js</li>
+  <li>Talwind CSS</li></li>
 </ol>
 
 # Build Tools and Package Managers
