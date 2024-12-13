@@ -24,11 +24,9 @@ function HeroText() {
   }, []);
 
   return (
-    <div className="max-w-[40rem] text-stone-300">
-      <p>
-        <span>Hey there</span>
-      </p>
-      <p>
+    <div className="max-w-[40rem] text-stone-300 order-2 desktop:order-1 flex flex-col gap-10 items-center desktop:items-start">
+      <p className="text-9xl">Welcome.</p>
+      <p className="desktop:text-left desktop:text-xl">
         {heroTextArr.map((el, i) => (
           <span
             key={i}
