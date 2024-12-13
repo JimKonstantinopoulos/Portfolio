@@ -1,7 +1,8 @@
+import Header from "./ui/Header";
 
 
 function App(){
-  return <p>Hi</p>
+  return <Header />
 }
 
 export default App;
