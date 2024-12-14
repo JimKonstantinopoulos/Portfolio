@@ -6,6 +6,7 @@ function Project({project}){
         <div>
             <img src={project.imgPath} alt="project view" />
         </div>
+        <p className="font-bold text-lg pt-2 pl-3">{project.name}</p>
         <div className="flex flex-col justify-between gap-4 grow m-3">
             <p>{project.description}</p>
             <div className="flex gap-4">
