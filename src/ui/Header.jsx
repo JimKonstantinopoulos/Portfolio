@@ -1,4 +1,3 @@
-import Content from "./Content";
 import HeroText from "./HeroText";
 import Logo from "./Logo";
 
@@ -9,7 +8,6 @@ function Header() {
       <Logo />
       <HeroText />
     </header>
-    <Content />
     </>
   );
 }
