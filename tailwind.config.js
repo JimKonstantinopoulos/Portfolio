@@ -13,7 +13,8 @@ export default {
     },
     extend: {
       colors:{
-        "background": "#0C0457"
+        "background": "#0C0457",
+        "background2": "#0A001B",
       },
       height: {
         svh: "100svh",
