@@ -24,8 +24,8 @@ const projectArr = [{
 
 function Content(){
     return <main className="bg-background2 flex flex-col">
-        <p className="text-stone-200 text-7xl text-center p-10">Take a look at my projects</p>
-        <div className="grid grid-cols-2 justify-items-center gap-5 p-10">
+        <p className="text-stone-200 text-5xl desktop:text-7xl text-center p-10">Take a look at my projects</p>
+        <div className="grid desktop:grid-cols-2 justify-items-center gap-5 p-10">
             {projectArr.map(project => <Project key={project.browserLink} project={project}/>)}
         </div>
     </main>

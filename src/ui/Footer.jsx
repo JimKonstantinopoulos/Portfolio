@@ -8,7 +8,7 @@ function Footer(){
             <a href="https://github.com/JimKonstantinopoulos"><FaGithub size="30"/></a>
             <a href="https://www.linkedin.com/in/dimitris-konstantinopoulos-9a76b5274/"><FaLinkedin size="30"/></a>
         </div>
-        <p>Copyright © 2024 Dimitris Konstantinopoulos. All rights reserved.</p>
+        <p className="text-center">Copyright © 2024 Dimitris Konstantinopoulos. All rights reserved.</p>
     </footer>
 }
 

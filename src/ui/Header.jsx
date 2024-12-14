@@ -4,9 +4,11 @@ import Logo from "./Logo";
 function Header() {
   return (
     <>
-    <header className="flex flex-col desktop:flex-row desktop:justify-around items-center min-h-svh bg-background pt-10 desktop:gap-4">
-      <Logo />
-      <HeroText />
+    <header className="flex justify-center items-center min-h-svh bg-background">
+      <div className="flex flex-col items-center desktop:flex-row desktop:justify-around gap-10 small:px-10">
+        <Logo />
+        <HeroText />
+      </div>
     </header>
     </>
   );
