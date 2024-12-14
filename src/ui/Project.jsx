@@ -2,7 +2,7 @@ import { FaGithub } from "react-icons/fa";
 import { SlGlobe } from "react-icons/sl";
 
 function Project({project}){
-    return <div className="flex flex-col text-stone-800 desktop:w-[28rem] desktop:h-[30rem] bg-slate-200 rounded-lg overflow-hidden">
+    return <div className="flex flex-col text-stone-800 tablet_w:max-w-[25rem] laptop:h-[30rem] bg-slate-200 rounded-lg overflow-hidden">
         <div>
             <img src={project.imgPath} alt="project view" />
         </div>
